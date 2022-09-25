@@ -22,7 +22,7 @@ app.use(morgan('common'))
 app.use("/v1/tacgia", authorRouter)
 app.use("/v1/sach", bookRouter)
 
-
-app.listen(3000, ()=>{
+const port = process.env.PORT || 3000
+app.listen(port, ()=>{
     
 })
